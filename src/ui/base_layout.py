@@ -9,6 +9,12 @@ def style_background_home():
                      .stApp{
                        background: #5865F2 ! important;
                      }
+                     
+                     .stApp div[data-testid="stColumn"]{
+                        background-color:#E0E3FF !important;
+                        padding:2.5rem !important;
+                        border-radius: 5rem !important;
+                    }
               </style>
               
               """
@@ -23,6 +29,7 @@ def style_background_dashboard():
                      .stApp{
                        background: #E0E3FF ! important;
                      }
+                     
               </style>
               
               """
