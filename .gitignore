@@ -1,6 +1,6 @@
 # Virtual environment
 venv/
-
+.streamlit/
 # Python cache
 __pycache__/
 **/__pycache__/
@@ -8,3 +8,6 @@ __pycache__/
 
 # Environment variables
 .env
+.vscode
+dist/
+Ds_Store
