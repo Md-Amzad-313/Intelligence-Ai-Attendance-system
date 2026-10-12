@@ -15,6 +15,11 @@ def style_background_home():
                         padding:2.5rem !important;
                         border-radius: 5rem !important;
                     }
+                    
+                    /* YE 3 LINES ADD KAR */
+                    .stApp div[data-testid="stColumn"] h2 {
+                        color: #5865F2 !important;
+            }
               </style>
               
               """
@@ -70,6 +75,16 @@ def style_base_layout():
             
              h3, h4, p {
                 font-family: 'Outfit', sans-serif;    
+            }
+            
+            
+            h1, h2 {
+                color: #252525 !important;
+            }
+
+            .stTextInput label,
+            .stTextInput label p {
+            color: #252525 !important;
             }
             
              button{
