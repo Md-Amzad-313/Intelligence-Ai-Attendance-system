@@ -41,7 +41,10 @@ def teacher_dashboard():
     with c1:
         header_dashboard()
     with c2:
-        st.subheader(f"""Welcome, {teacher_data['name']} """)
+        st.markdown(
+          f"<h3 style='color: #252525;'>Welcome, {teacher_data['name']}</h3>",
+          unsafe_allow_html=True
+        )
         if st.button(
             "Logout", type="secondary", key="loginbackbtn", shortcut="control+backspace"
         ):
@@ -124,6 +127,15 @@ def teacher_tab_take_attendance():
         return
     
     subject_options = {f"{s['name']} - {s['subject_code']}": s['subject_id'] for s in subjects}
+    
+    st.markdown("""
+    <style>
+        .stSelectbox label,
+        .stSelectbox label p {
+        color: #252525 !important;
+      }
+    </style>
+    """, unsafe_allow_html=True)
 
     col1, col2 = st.columns([3,1], vertical_alignment='bottom')
 
